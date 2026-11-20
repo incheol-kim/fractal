@@ -1,0 +1,51 @@
+{
+  "camera_center": [0.5, 0.395],
+  "punch": [
+    { "attack_t": 34.08, "zoom": 1.6, "c": [0.5, 0.42], "hold": 0.10, "ease": 0.30 },
+    { "attack_t": 41.49, "zoom": 1.04, "c": [0.5, 0.5], "hold": 0, "ease": 0.30 }
+  ],
+  "shake": [39.0, 41.1],
+  "washes": [
+    { "attack_index": 0, "gain": 0.20 },
+    { "attack_index": 1, "gain": 0.27, "groups": ["white_box"] },
+    { "attack_index": 2, "gain": 0.34, "kinds": ["mass"] },
+    { "attack_index": 3, "gain": 0.45 }
+  ],
+  "pins": [
+    { "attack_t": 30.32, "groups": ["sky"], "style": "slide" },
+    { "attack_t": 30.46, "groups": ["cloud_main"] },
+    { "attack_t": 30.59, "groups": ["city_left", "city_right"] },
+    { "attack_t": 31.64, "groups": ["bldg_top_mid"] },
+    { "attack_t": 34.08, "groups": ["white_box", "glass_room", "grand_piano", "room_plant", "room_figure"] },
+    { "attack_t": 34.37, "groups": ["red_low_wall"] },
+    { "attack_t": 34.56, "groups": ["bldg_low_dark"] },
+    { "attack_t": 34.79, "groups": ["bldg_under_rbl"] },
+    { "attack_t": 35.02, "groups": ["cabinet_cello"] },
+    { "attack_t": 35.50, "groups": ["win_blue_low"] },
+    { "attack_t": 35.75, "groups": ["cage_right_mid"] },
+    { "attack_t": 35.99, "groups": ["person_terrace_a"] },
+    { "attack_t": 36.24, "groups": ["tank_small"] },
+    { "attack_t": 36.50, "groups": ["antenna_tv_a"] },
+    { "attack_t": 36.74, "groups": ["ac_top_d"] },
+    { "attack_t": 37.09, "groups": ["ac_top_a"] },
+    { "attack_t": 37.81, "groups": ["red_block_left", "blue_block", "red_block_top", "sign_rbl", "keys_blue_wall", "balcony_blue_top", "win_red_top"], "style": "fold" },
+    { "attack_t": 39.02, "groups": ["tank_big"] },
+    { "attack_t": 39.40, "groups": ["tank_mid"] },
+    { "attack_t": 41.49, "groups": ["base_houses", "pole_left", "wall_coral"] },
+    { "attack_t": 42.59, "groups": ["coral_tree_1", "coral_tree_2", "coral_tree_3"], "style": "bleed" },
+    { "attack_t": 43.02, "groups": ["coral_tree_4", "coral_tree_5"], "style": "bleed" },
+    { "attack_t": 43.46, "groups": ["white_square_a"] },
+    { "attack_t": 43.86, "groups": ["white_square_b"] }
+  ],
+  "develop": [
+    { "attack_t": 35.24, "groups": ["blue_room", "red_room"] }
+  ],
+  "run": [30.72, 31.75],
+  "solo_wires": [31.75, 34.05],
+  "glue_attack_t": 41.49,
+  "pip": [
+    { "attack_t": 19.37, "block": "glass_room" },
+    { "attack_t": 23.03, "block": "blue_room" },
+    { "attack_t": 26.72, "block": "red_room" }
+  ]
+}

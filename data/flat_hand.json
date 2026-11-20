@@ -1,0 +1,11 @@
+{
+  "note": "Inks given by hand. The tree and the red blocks have the same hue in the key image, so colour alone cannot tell them apart; the tree's five pieces are set to coral here. hand_only inks are never picked automatically.",
+  "hand_only": ["coral"],
+  "ink_by_leaf": {
+    "coral_tree_1": "coral",
+    "coral_tree_2": "coral",
+    "coral_tree_3": "coral",
+    "coral_tree_4": "coral",
+    "coral_tree_5": "coral"
+  }
+}

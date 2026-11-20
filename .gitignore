@@ -1,0 +1,14 @@
+# dependencies and environments
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# superpowers scratch (ledgers, briefs, review packages)
+.superpowers/
+
+# Everything else that is not pushed lives under local-only/: kept material in named folders
+# (resources/, assets/collage_src/, models/, review-lossless/, video/, docs/, research/, skills/) and
+# the scratch of the tools in local-only/temp/ (see "저장소에 올라가지 않는 것" in tools/README.md).
+# The baked collage cuts (assets/collage/) are committed.
+local-only/

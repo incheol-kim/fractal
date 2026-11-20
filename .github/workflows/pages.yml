@@ -1,0 +1,53 @@
+# GitHub Pages for the public repository (fractal): builds the page under the repository's sub-path
+# (https://incheol-kim.github.io/fractal/) and publishes it.
+#
+# The private source repository keeps this file where GitHub does not run it; the published copy has it
+# here. Its jobs run only while the repository is public. After the repository is made public: Settings ->
+# Pages -> Build and deployment -> Source: "GitHub Actions", then Actions -> Pages -> Run workflow once.
+# From then on every push to main publishes (tools/README.md, "공개 저장소와 웹 버전").
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# one publication at a time; a newer push waits for the one running
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: ${{ !github.event.repository.private }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          # Vite 8 needs Node 20.19 or 22.12 and later
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      # the page and assets/ (the web set of the collage's pieces among them), every address under /fractal/
+      - run: npx vite build --base=/fractal/ --outDir=dist
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  # skipped with build (a private repository)
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

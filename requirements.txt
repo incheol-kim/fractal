@@ -1,0 +1,17 @@
+# Every package pinned to the version in .venv (Python 3.14.5): the tools' outputs are compared
+# byte for byte, and the score test depends on scipy's tie-breaking.
+numpy==2.5.4
+scipy==1.18.1
+pillow==13.0.0
+spandrel==0.4.2
+# wire mask, plate and strokes (tools/make_plate.py, tools/make_strokes.py): morphology, line
+# segment detector, skeletons; pinned because the outputs are compared byte for byte
+opencv-python-headless==5.0.0.93
+scikit-image==0.26.0
+# SAM 2.1 (tools/segment.py) through transformers' Sam2Model; the API is version-sensitive
+transformers==5.23.0
+# torch/torchvision must be the CUDA build (RTX 50 series needs CUDA 12.8+); installed from
+#   https://download.pytorch.org/whl/cu134
+--extra-index-url https://download.pytorch.org/whl/cu134
+torch==2.15.0+cu134
+torchvision==0.29.2+cu134

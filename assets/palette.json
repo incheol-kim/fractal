@@ -1,0 +1,11 @@
+{
+  "paper": "#f1e9d8",
+  "inks": [
+    {"name": "vermilion", "hex": "#d9482b"},
+    {"name": "cobalt", "hex": "#2f5fae"},
+    {"name": "yellow", "hex": "#e3a92f"},
+    {"name": "concrete", "hex": "#b9b4a8"},
+    {"name": "black", "hex": "#1b1a18"},
+    {"name": "coral", "hex": "#f4877a"}
+  ]
+}

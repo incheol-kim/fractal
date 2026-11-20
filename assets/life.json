@@ -1,0 +1,11 @@
+{
+ "regions": "a7a2282c96d0ee98",
+ "file": "life.png",
+ "w": 2944,
+ "h": 1648,
+ "channels": {
+  "flow": {"leaves": [1, 2], "feather": 24, "area": 0.272916, "rim": 3, "keep_thin": {"size": 9, "darker": 16, "grow": 4}, "held": 0.030063},
+  "tremble": {"leaves": [15, 16, 17, 49, 62, 142, 143, 144, 145, 146, 153, 157, 173, 174, 177, 182], "feather": 6, "area": 0.059428},
+  "breath": {"leaves": [50, 51, 52, 53, 54, 152, 153, 154, 155, 156, 157, 158], "feather": 3, "area": 0.052485}
+ }
+}

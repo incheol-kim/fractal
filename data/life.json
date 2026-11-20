@@ -1,0 +1,5 @@
+{
+ "flow": {"groups": ["sky", "cloud_main"], "feather": 24, "rim": 3, "keep_still": [[0.10462, 0.14442, 0.11277, 0.23422], [0.12636, 0.13653, 0.13043, 0.23422], [0.40829, 0.04672, 0.41576, 0.07403], [0.35462, 0.0, 0.375, 0.0182], [0.44905, 0.12985, 0.5214, 0.21966], [0.0, 0.38228, 0.19022, 0.87985]], "keep_thin": {"size": 9, "darker": 16, "grow": 4}},
+ "tremble": {"groups": ["coral_tree_1", "coral_tree_2", "coral_tree_3", "coral_tree_4", "coral_tree_5", "tree_green", "tree_top_a", "tree_top_b", "tree_top_c", "tree_wing", "room_plant", "plant_top_mid", "plant_top_mid_b", "roof_plants", "plant_wing_balcony"], "leaves": ["plant_red_room"], "feather": 6},
+ "breath": {"groups": ["glass_room", "grand_piano", "room_plant", "room_figure", "blue_room", "red_room"], "feather": 3}
+}
